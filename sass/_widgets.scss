@@ -1,0 +1,29 @@
+.widget {
+  margin-bottom: 20px;
+
+  ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+      position: relative;
+      display: block;
+      padding: .75rem 0;
+      margin-bottom: -1px;
+      background-color: #fff;
+      border: none;
+
+      a {
+        color: #333;
+        &:hover {
+          color: #007bff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
