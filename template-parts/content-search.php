@@ -9,7 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="card <?php post_class(); ?>">
+<article id="post-<?php the_ID(); ?>" class="card shadow <?php post_class(); ?>">
+		<?php bootscore_post_thumbnail(); ?>
 	<header class="card-header">
 		<?php the_title( sprintf( '<h2 class="card-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
@@ -23,7 +24,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php bootscore_post_thumbnail(); ?>
+
 
 	<div class="card-body">
 		<?php the_excerpt(); ?>

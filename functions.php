@@ -108,11 +108,40 @@ function bootscore_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'bootscore' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'bootscore' ),
+		'before_widget' => '<section id="%1$s" class="widget card card-body shadow %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	$args = array(
+		'id'            => 'bootscore-footer-widget-one',
+		'name'          => __( 'Footer Widget 1', 'bootscore' ),
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 		'before_widget' => '<section id="%1$s" class="widget card card-body %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	);
+	register_sidebar( $args );
+
+	$args = array(
+		'id'            => 'bootscore-footer-widget-two',
+		'name'          => __( 'Footer Widget 2', 'bootscore' ),
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+		'before_widget' => '<section id="%1$s" class="widget card card-body %2$s">',
+		'after_widget'  => '</section>',
+	);
+	register_sidebar( $args );
+
+	$args = array(
+		'id'            => 'bootscore-footer-widget-three',
+		'name'          => __( 'Footer Widget 3', 'bootscore' ),
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+		'before_widget' => '<section id="%1$s" class="widget card card-body %2$s">',
+		'after_widget'  => '</section>',
+	);
+	register_sidebar( $args );
 }
 add_action( 'widgets_init', 'bootscore_widgets_init' );
 

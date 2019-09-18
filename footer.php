@@ -12,7 +12,21 @@
 ?>
 
 	</div><!-- #content -->
-
+	<div class="footer-widgets-container">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-4">
+	        <?php dynamic_sidebar( 'bootscore-footer-widget-one' ); ?>
+	      </div>
+	      <div class="col-lg-4">
+	        <?php dynamic_sidebar( 'bootscore-footer-widget-two' ); ?>
+	      </div>
+	      <div class="col-lg-4">
+	        <?php dynamic_sidebar( 'bootscore-footer-widget-three' ); ?>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="site-info text-white">

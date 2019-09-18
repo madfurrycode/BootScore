@@ -55,10 +55,6 @@ body {
   outline: none;
 }
 
-.site-content {
-  margin-top: 20px;
-}
-
 .card {
   margin-bottom: 30px;
 }
@@ -105,5 +101,153 @@ body {
 .widget ul li a:hover {
   color: #007bff;
   text-decoration: none;
+}
+
+.footer-widgets-container {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #464e57 !important;
+}
+
+.footer-widgets-container .widget {
+  margin-bottom: 20px;
+  background-color: transparent !important;
+}
+
+.footer-widgets-container .widget .widget-title {
+  color: #fff !important;
+}
+
+.footer-widgets-container .widget ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-widgets-container .widget ul li {
+  position: relative;
+  display: block;
+  padding: 0.75rem 0;
+  margin-bottom: -1px;
+  background-color: transparent !important;
+  border: none;
+}
+
+.footer-widgets-container .widget ul li a {
+  color: #fff !important;
+}
+
+.footer-widgets-container .widget ul li a:hover {
+  color: #007bff !important;
+  text-decoration: none;
+}
+
+.comments-area .comments-title {
+  color: #333;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.front-page-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #0173aa;
+}
+
+.front-page-header .front-page-title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.front-page-header .front-page-title a {
+  color: #fff;
+}
+
+.front-page-header .front-page-title a:hover {
+  color: #eee;
+  text-decoration: none;
+}
+
+.archive-description {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card {
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: #fff;
+}
+
+.card .card-header {
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: #fff;
+}
+
+.card .card-header a {
+  color: #333;
+}
+
+.card .card-header a:hover {
+  color: #0173aa;
+  text-decoration: none;
+}
+
+.card .card-header .card-title {
+  margin-bottom: 0;
+}
+
+.card .card-header i {
+  opacity: 0.3;
+}
+
+.card .card-header .card-divider {
+  opacity: 0.7;
+}
+
+.card .card-header .card-meta {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card .card-body {
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: #fff;
+}
+
+.card .card-body a {
+  color: #333;
+}
+
+.card .card-body a:hover {
+  color: #0173aa;
+  text-decoration: none;
+}
+
+.card .card-footer {
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: #fff;
+}
+
+.card .card-footer a {
+  color: #333;
+}
+
+.card .card-footer a:hover {
+  color: #0173aa;
+  text-decoration: none;
+}
+
+.form-control {
+  border-radius: 0 !important;
+}
+
+.btn {
+  border-radius: 0 !important;
 }
 

@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="no-results not-found card">
+<section class="no-results not-found card shadow">
 	<header class="card-header">
 		<h1 class="card-title"><?php esc_html_e( 'Nothing Found', 'bootscore' ); ?></h1>
 	</header><!-- .page-header -->

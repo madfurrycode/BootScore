@@ -9,7 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="card <?php post_class(); ?>">
+<article id="post-<?php the_ID(); ?>" class="card shadow <?php post_class(); ?>">
+	<?php bootscore_post_thumbnail(); ?>
 	<header class="card-header">
 		<?php
 		if ( is_singular() ) :
@@ -21,15 +22,12 @@
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="card-meta">
-				<?php
-				bootscore_posted_on();
-				bootscore_posted_by();
-				?>
+				<?php bootscore_posted_on(); ?>
+					<span class="card-divider ml-1 mr-1">|</span>
+				<?php bootscore_posted_by(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php bootscore_post_thumbnail(); ?>
 
 	<div class="card-body">
 		<?php

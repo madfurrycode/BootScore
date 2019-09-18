@@ -27,3 +27,41 @@
     }
   }
 }
+
+.footer-widgets-container {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #464e57!important;
+  .widget {
+    margin-bottom: 20px;
+    background-color: transparent!important;
+    .widget-title {
+      color: #fff!important;
+    }
+    ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      li {
+        position: relative;
+        display: block;
+        padding: .75rem 0;
+        margin-bottom: -1px;
+        background-color: transparent!important;
+        border: none;
+
+        a {
+          color: #fff!important;
+          &:hover {
+            color: #007bff!important;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

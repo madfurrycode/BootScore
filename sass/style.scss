@@ -10,7 +10,6 @@ License URI: LICENSE
 Text Domain: bootscore
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
-
 body {
   background-color: #eee!important;
 }
@@ -19,3 +18,10 @@ body {
 @import "content";
 @import "footer";
 @import "widgets";
+@import "comments";
+
+@import "front-page";
+@import "archive";
+
+@import "components/card";
+@import "components/forms";

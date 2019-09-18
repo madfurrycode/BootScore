@@ -16,12 +16,14 @@ get_header();
 				<main id="main" class="site-main">
 
 				<?php if ( have_posts() ) : ?>
-
 					<header class="card card-body shadow">
-						<?php
-							the_archive_title( '<h1 class="card-title">', '</h1>' );
-							the_archive_description( '<small class="archive-description">', '</small>' );
-						?>
+            <div class="media">
+              <img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0"><?php bootscore_posted_by(); ?></h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quisquam. Harum dignissimos facilis dolor corporis architecto quidem consequatur animi reprehenderit!
+              </div>
+            </div>
 					</header><!-- .page-header -->
 
 					<?php

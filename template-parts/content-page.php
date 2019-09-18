@@ -9,12 +9,11 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="card <?php post_class(); ?>">
+<article id="post-<?php the_ID(); ?>" class="card shadow <?php post_class(); ?>">
+	<?php bootscore_post_thumbnail(); ?>
 	<header class="card-header">
 		<?php the_title( '<h1 class="card-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-
-	<?php bootscore_post_thumbnail(); ?>
 
 	<div class="card-body">
 		<?php
